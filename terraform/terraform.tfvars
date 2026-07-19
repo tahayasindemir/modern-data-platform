@@ -1,0 +1,1 @@
+bucket_name = "taha-modern-data-platform"
