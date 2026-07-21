@@ -5,6 +5,7 @@ variable "aws_region" {
 }
 
 variable "bucket_name" {
-  description = "S3 Bucket Name"
+  description = "Name of the raw data lake S3 bucket."
   type        = string
+  nullable    = false
 }
