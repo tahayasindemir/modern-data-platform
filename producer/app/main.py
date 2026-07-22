@@ -1,13 +1,19 @@
+import boto3
+
+from app.config import settings
 from app.generator import generate_event
 from app.uploader import S3Uploader
 
-BUCKET_NAME = "taha-modern-data-platform"
-
 
 def main() -> None:
-    event = generate_event()
+    client = boto3.client("s3", region_name=settings.aws_region)
 
-    uploader = S3Uploader(BUCKET_NAME)
+    uploader = S3Uploader(
+        bucket_name=settings.bucket_name,
+        client=client,
+    )
+
+    event = generate_event()
 
     uploader.upload(event)
 
