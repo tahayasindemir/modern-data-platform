@@ -1,11 +1,9 @@
-from pprint import pprint
-
 from .generator import generate_event
 
 
 def main() -> None:
     telemetry = generate_event()
-    pprint(telemetry)
+    print(telemetry.model_dump_json(indent=2))
 
 
 if __name__ == "__main__":

@@ -1,9 +1,9 @@
-from dataclasses import dataclass
 from datetime import datetime
 
+from pydantic import BaseModel
 
-@dataclass(slots=True)
-class TruckTelemetry:
+
+class TruckTelemetry(BaseModel):
     truck_id: str
     timestamp: datetime
     latitude: float
