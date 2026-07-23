@@ -1,0 +1,17 @@
+[project]
+name = "telemetry-producer"
+version = "0.1.0"
+description = "Synthetic logistics telemetry producer."
+requires-python = ">=3.12"
+
+dependencies = [
+    "boto3",
+    "pydantic>=2.0",
+    "pydantic-settings>=2.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "ruff",
+]
