@@ -1,15 +1,11 @@
 # macOS
 .DS_Store
 
-# Terraform working directory
-terraform/.terraform/
+# Terraform
+**/.terraform/
+**/*.tfstate
+**/*.tfstate.*
+**/crash.log
 
-# Terraform state
-terraform/*.tfstate
-terraform/*.tfstate.*
-
-# Crash logs
-terraform/crash.log
-
-# Variable files containing secrets (optional)
-terraform/*.auto.tfvars
+# Terraform variable files
+**/*.auto.tfvars
