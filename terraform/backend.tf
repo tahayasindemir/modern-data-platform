@@ -2,8 +2,8 @@ terraform {
   backend "s3" {
     bucket       = "taha-modern-data-platform-tfstate"
     key          = "modern-data-platform/terraform.tfstate"
-    region       = "eu-central-1"
-    encrypt      = true
-    use_lockfile = true
+    region        = "eu-central-1"
+    encrypt       = true
+    use_lockfile  = true
   }
 }
