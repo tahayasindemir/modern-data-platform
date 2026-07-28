@@ -24,11 +24,21 @@ jobs:
 
       - name: Install uv
         uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
+      - name: Cache virtual environment
+        uses: actions/cache@v4
+        with:
+          path: producer/.venv
+          key: ${{ runner.os }}-venv-${{ hashFiles('producer/uv.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-venv-
 
       - name: Install dependencies
         run: uv sync
