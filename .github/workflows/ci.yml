@@ -1,4 +1,4 @@
-name: Continuous Integration
+name: Producer CI
 
 on:
   push:
@@ -38,3 +38,6 @@ jobs:
 
       - name: Pytest
         run: uv run pytest
+
+      - name: Build Docker image
+        run: docker build -t telemetry-producer:${{ github.sha }} .
