@@ -94,7 +94,7 @@ Analytics Layer
 ### Clone the repository
 
 ```bash
-git clone https://github.com/<your-github-username>/modern-data-platform.git
+git clone https://github.com/tahayasindemir/modern-data-platform.git
 cd modern-data-platform
 ```
 
