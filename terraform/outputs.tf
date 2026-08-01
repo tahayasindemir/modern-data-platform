@@ -19,3 +19,8 @@ output "ecr_repository_url" {
 
   value = aws_ecr_repository.telemetry_producer.repository_url
 }
+
+output "github_actions_role_arn" {
+  description = "IAM role assumed by GitHub Actions via OIDC."
+  value       = aws_iam_role.github_actions.arn
+}
