@@ -55,7 +55,7 @@ jobs:
 
       - name: Build Docker image
         run: docker build -t telemetry-producer:${{ github.sha }} .
-      
+
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
