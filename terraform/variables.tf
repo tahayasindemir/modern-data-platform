@@ -9,3 +9,13 @@ variable "bucket_name" {
   type        = string
   nullable    = false
 }
+
+variable "github_owner" {
+  description = "GitHub user or organization name."
+  type        = string
+}
+
+variable "github_repository" {
+  description = "GitHub repository name."
+  type        = string
+}
