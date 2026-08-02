@@ -68,6 +68,7 @@ Analytics Layer
 * Python telemetry producer
 * GitHub Actions CI for Python
 * GitHub Actions validation for Terraform
+* GitHub Actions authentication with AWS using OpenID Connect (OIDC)
 
 ## Repository Structure
 
@@ -131,6 +132,8 @@ Current checks include:
 * Terraform validation
 * Python linting
 * Python unit tests
+* Docker image build validation
+* AWS authentication using GitHub OIDC
 
 ## Roadmap
 

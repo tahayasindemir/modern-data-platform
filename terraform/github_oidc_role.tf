@@ -20,12 +20,16 @@ data "aws_iam_policy_document" "github_oidc_assume_role" {
       ]
     }
 
+    # GitHub repositories created after July 15, 2026 use immutable OIDC
+    # subject claims that include owner and repository identifiers.
+    # This trust policy remains scoped to this repository while allowing
+    # those immutable identifiers to vary.
     condition {
       test     = "StringLike"
       variable = "token.actions.githubusercontent.com:sub"
+
       values = [
-        "repo:${var.github_owner}/${var.github_repository}:ref:refs/heads/main",
-        "repo:${var.github_owner}/${var.github_repository}:pull_request"
+        "repo:tahayasindemir@*/modern-data-platform@*:*"
       ]
     }
   }
