@@ -19,7 +19,7 @@ data "aws_iam_policy_document" "github_oidc_assume_role" {
         "sts.amazonaws.com"
       ]
     }
-    
+
     # GitHub repositories created after July 15, 2026 use immutable OIDC
     # subject claims that include owner and repository identifiers.
     # This trust policy remains scoped to this repository while allowing
