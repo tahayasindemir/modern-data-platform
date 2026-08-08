@@ -1,0 +1,12 @@
+# Airflow runtime logs
+logs/
+
+# Python
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# Environment variables
+.env
