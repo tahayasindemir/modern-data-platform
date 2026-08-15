@@ -19,3 +19,9 @@ variable "github_repository" {
   description = "GitHub repository name."
   type        = string
 }
+
+variable "snowflake_terraform_public_key" {
+  description = "RSA public key used by the Snowflake Terraform service user."
+  type        = string
+  nullable    = false
+}
