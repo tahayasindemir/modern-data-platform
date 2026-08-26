@@ -19,3 +19,15 @@ variable "github_repository" {
   description = "GitHub repository name."
   type        = string
 }
+
+variable "snowflake_storage_integration_principal" {
+  description = "AWS principal ARN provided by Snowflake for the S3 storage integration."
+  type        = string
+  sensitive   = true
+}
+
+variable "snowflake_storage_integration_external_id" {
+  description = "External ID provided by Snowflake for the S3 storage integration."
+  type        = string
+  sensitive   = true
+}
