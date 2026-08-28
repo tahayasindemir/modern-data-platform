@@ -4,4 +4,8 @@ provider "aws" {
 
 provider "snowflake" {
   authenticator = "SNOWFLAKE_JWT"
+
+  experimental_features_enabled = [
+    "PROVIDER_CONFIGURATION_ACCOUNT_FALLBACK"
+  ]
 }
