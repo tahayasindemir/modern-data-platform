@@ -8,4 +8,8 @@ provider "snowflake" {
   experimental_features_enabled = [
     "PROVIDER_CONFIGURATION_ACCOUNT_FALLBACK"
   ]
+
+  preview_features_enabled = [
+    "snowflake_table_resource"
+  ]
 }
