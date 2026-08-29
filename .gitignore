@@ -9,3 +9,5 @@
 
 # Terraform variable files
 **/*.auto.tfvars
+**/*.tfvars
+**/*.tfvars.json
