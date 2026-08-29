@@ -11,7 +11,7 @@ resource "aws_iam_role" "snowflake_s3" {
         Effect = "Allow"
 
         Principal = {
-          AWS = "arn:aws:iam::${data.aws_caller_identity.current.account_id}:root"
+          AWS = var.snowflake_storage_aws_iam_user_arn
         }
 
         Action = "sts:AssumeRole"
