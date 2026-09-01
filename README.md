@@ -162,19 +162,17 @@ Current checks include:
 * ✅ Secure S3 data lake
 * ✅ Remote Terraform state
 * ✅ IAM least-privilege access
-* ✅ AWS OIDC authentication for GitHub Actions
 * ✅ Python telemetry producer
-* ✅ Dockerized telemetry producer
+* ✅ Docker containerization
 * ✅ Amazon ECR
 * ✅ Docker image publishing
+* ✅ GitHub Actions CI
+* ✅ GitHub Actions AWS OIDC authentication
 * ✅ Apache Airflow orchestration
-* ✅ Snowflake database and RAW schema
-* ✅ Snowflake S3 storage integration
-* ✅ Snowflake external stage
-* ✅ Snowflake RAW telemetry landing table
-* ✅ S3 → Snowflake batch ingestion with COPY INTO
+* ✅ Snowflake foundation
+* ✅ S3 → Snowflake raw ingestion
 
-### In Progress
+### Next
 
 * 🚧 dbt transformation layer
 * 🚧 Data quality checks
@@ -183,7 +181,7 @@ Current checks include:
 
 * ⬜ Analytical marts
 * ⬜ Observability
-* ⬜ Production-oriented CI/CD for data transformations
+* ⬜ Production-oriented data pipeline improvements
 
 ## Design Principles
 
