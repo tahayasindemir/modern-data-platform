@@ -158,32 +158,32 @@ Current checks include:
 
 ### Completed
 
-✅ Terraform bootstrap infrastructure
-✅ Secure S3 data lake
-✅ Remote Terraform state
-✅ IAM least-privilege access
-✅ AWS OIDC authentication for GitHub Actions
-✅ Python telemetry producer
-✅ Dockerized telemetry producer
-✅ Amazon ECR
-✅ Docker image publishing
-✅ Apache Airflow orchestration
-✅ Snowflake database and RAW schema
-✅ Snowflake S3 storage integration
-✅ Snowflake external stage
-✅ Snowflake RAW telemetry landing table
-✅ S3 → Snowflake batch ingestion with COPY INTO
+* ✅ Terraform bootstrap infrastructure
+* ✅ Secure S3 data lake
+* ✅ Remote Terraform state
+* ✅ IAM least-privilege access
+* ✅ AWS OIDC authentication for GitHub Actions
+* ✅ Python telemetry producer
+* ✅ Dockerized telemetry producer
+* ✅ Amazon ECR
+* ✅ Docker image publishing
+* ✅ Apache Airflow orchestration
+* ✅ Snowflake database and RAW schema
+* ✅ Snowflake S3 storage integration
+* ✅ Snowflake external stage
+* ✅ Snowflake RAW telemetry landing table
+* ✅ S3 → Snowflake batch ingestion with COPY INTO
 
 ### In Progress
 
-🚧 dbt transformation layer
-🚧 Data quality checks
+* 🚧 dbt transformation layer
+* 🚧 Data quality checks
 
 ### Planned
 
-⬜ Analytical marts
-⬜ Observability
-⬜ Production-oriented CI/CD for data transformations
+* ⬜ Analytical marts
+* ⬜ Observability
+* ⬜ Production-oriented CI/CD for data transformations
 
 ## Design Principles
 
