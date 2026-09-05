@@ -32,6 +32,12 @@ models:
 
       - name: status
         description: Operational status reported by the truck.
+        data_tests:
+          - accepted_values:
+              values:
+                - IN_TRANSIT
+                - STOPPED
+                - UNLOADING
 
       - name: source_file
         description: Original S3 object path containing the raw event.
