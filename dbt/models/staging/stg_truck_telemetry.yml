@@ -1,0 +1,40 @@
+version: 2
+
+models:
+  - name: stg_truck_telemetry
+    description: Cleaned and typed truck telemetry events extracted from the raw JSON payload.
+
+    columns:
+      - name: truck_id
+        description: Unique identifier of the truck.
+        data_tests:
+          - not_null
+
+      - name: event_timestamp
+        description: Timestamp when the telemetry event occurred.
+        data_tests:
+          - not_null
+
+      - name: latitude
+        description: Truck latitude at the time of the event.
+
+      - name: longitude
+        description: Truck longitude at the time of the event.
+
+      - name: speed
+        description: Truck speed at the time of the event.
+
+      - name: fuel_level
+        description: Truck fuel level at the time of the event.
+
+      - name: temperature
+        description: Truck temperature reading at the time of the event.
+
+      - name: status
+        description: Operational status reported by the truck.
+
+      - name: source_file
+        description: Original S3 object path containing the raw event.
+
+      - name: loaded_at
+        description: Timestamp when Snowflake loaded the raw record.

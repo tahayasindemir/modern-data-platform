@@ -11,3 +11,12 @@
 **/*.auto.tfvars
 **/*.tfvars
 **/*.tfvars.json
+
+# dbt
+dbt/target/
+dbt/logs/
+
+# Python / uv
+dbt/.venv/
+__pycache__/
+*.py[cod]
