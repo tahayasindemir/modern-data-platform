@@ -15,3 +15,9 @@ resource "snowflake_schema" "intermediate" {
   name     = "INTERMEDIATE"
   comment  = "Intermediate transformations managed by dbt"
 }
+
+resource "snowflake_schema" "marts" {
+  database = snowflake_database.mdp.name
+  name     = "MARTS"
+  comment  = "Analytics-ready models managed by dbt"
+}
