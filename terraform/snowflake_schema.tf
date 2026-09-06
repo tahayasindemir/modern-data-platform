@@ -9,3 +9,9 @@ resource "snowflake_schema" "staging" {
   name     = "STAGING"
   comment  = "Staging models managed by dbt"
 }
+
+resource "snowflake_schema" "intermediate" {
+  database = snowflake_database.mdp.name
+  name     = "INTERMEDIATE"
+  comment  = "Intermediate transformations managed by dbt"
+}

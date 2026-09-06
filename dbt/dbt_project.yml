@@ -11,7 +11,8 @@ models:
   modern_data_platform:
     staging:
       +materialized: view
+      +schema: STAGING
+
     intermediate:
       +materialized: view
-    marts:
-      +materialized: table
+      +schema: INTERMEDIATE
