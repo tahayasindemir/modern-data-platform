@@ -1,0 +1,21 @@
+version: 2
+
+sources:
+  - name: raw
+    database: MDP
+    schema: RAW
+    description: Raw telemetry data ingested from Amazon S3.
+
+    tables:
+      - name: truck_telemetry
+        description: Raw truck telemetry events stored as JSON VARIANT records.
+
+        columns:
+          - name: event
+            description: Raw telemetry event payload as JSON.
+
+          - name: source_file
+            description: Source S3 object path.
+
+          - name: loaded_at
+            description: Timestamp when the record was loaded into Snowflake.

@@ -1,0 +1,22 @@
+name: modern_data_platform
+version: '1.0.0'
+config-version: 2
+
+profile: modern_data_platform
+
+model-paths: ["models"]
+test-paths: ["tests"]
+
+models:
+  modern_data_platform:
+    staging:
+      +materialized: view
+      +schema: STAGING
+
+    intermediate:
+      +materialized: view
+      +schema: INTERMEDIATE
+
+    marts:
+      +materialized: table
+      +schema: MARTS
